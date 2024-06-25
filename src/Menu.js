@@ -3,7 +3,7 @@ import './index.css'
 
 export default function Menu (){
     return <main className = "menu">
-        <h1> Our Menu </h1>
+        <h2> Our Menu </h2>
         <Pizza name="Focaccia" desc="Bread with italian olive oil and rosemary"/>
         <Pizza name="Pizza Margherita" desc="Bread with italian olive oil and rosemary"/>
         <Pizza name="Pizza Spinaci" desc="Bread with italian olive oil and rosemary"/>

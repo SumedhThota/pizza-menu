@@ -47,7 +47,7 @@ const pizzaData = [
 export default function Pizza (props){
     return <div>
         <img src = "pizzas\funghi.jpg" alt ="alt"></img>
-        <h1>{props.name}</h1>
+        <h3>{props.name}</h3>
         <p>{props.desc}</p>
     </div>
 }
