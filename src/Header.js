@@ -1,5 +1,7 @@
+import './index.css'
+
 export default function Header (){
-    return <div>
+    return <header className = "header">
         <h1>Pizza bay</h1>
-    </div>
+    </header>
 }
