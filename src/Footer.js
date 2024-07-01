@@ -1,5 +1,6 @@
 import './index.css'
-
+import Order
+ from './Order'
 export default function Footer (){
     const hour = new Date().getHours()
     const openHour = 12
@@ -8,12 +9,9 @@ export default function Footer (){
 
     return (
         <div class="footer">
-            {isOpen?(<div className = "order">
-                    <p>We're open until {closeHour}:00. Come visit us. Order online.</p>
-                    <button className="btn">Order</button>
-                    </div>): 
+            {isOpen?(<Order openHour={openHour} closeHour = {closeHour}/>): 
                     (<div className = "order">
-                    <p>We're happt to welcome you between {openHour}:00 and {closeHour}:00.</p>
+                    <p>We're happy to welcome you between {openHour}:00 and {closeHour}:00.</p>
                 </div>)
                 }
         </div>
