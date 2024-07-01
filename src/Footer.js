@@ -8,15 +8,14 @@ export default function Footer (){
 
     return (
         <div class="footer">
-            {isOpen && 
-                <div className = "order">
+            {isOpen?(<div className = "order">
                     <p>We're open until {closeHour}:00. Come visit us. Order online.</p>
                     <button className="btn">Order</button>
-                </div>}
-                {!isOpen && 
-                <div className = "order">
-                    <p>We're closed.</p>
-                </div>}
+                    </div>): 
+                    (<div className = "order">
+                    <p>We're still working on our menu. Please come back later.</p>
+                </div>)
+                }
         </div>
     )
     
