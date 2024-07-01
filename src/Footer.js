@@ -13,7 +13,7 @@ export default function Footer (){
                     <button className="btn">Order</button>
                     </div>): 
                     (<div className = "order">
-                    <p>We're still working on our menu. Please come back later.</p>
+                    <p>We're happt to welcome you between {openHour}:00 and {closeHour}:00.</p>
                 </div>)
                 }
         </div>
