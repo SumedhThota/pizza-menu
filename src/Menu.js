@@ -50,10 +50,16 @@ export default function Menu (){
     const pizzas = pizzaData
     return <main className = "menu">
         <h2> Our Menu </h2>
-        {pizzas && <ul className="pizzas">
+        
+        {pizzas && <>
+          <p>Authentic Italian cuisine. 6 creative dishes to choose from. All from our own stove oven,
+          all organic and delicious.
+        </p>
+          <ul className="pizzas">
             {pizzas.map((pizza) => (
                 <Pizza pizza={pizza} key={pizza.name}/>
                 ))}
-        </ul>}
+        </ul>
+        </>}
     </main>
 }
