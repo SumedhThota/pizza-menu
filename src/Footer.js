@@ -11,7 +11,7 @@ export default function Footer (){
         <div class="footer">
             {isOpen?(<Order openHour={openHour} closeHour = {closeHour}/>): 
                     (<div className = "order">
-                    <p>We're closed. Happy to welcome you between {openHour}:00 and {closeHour}:00.</p>
+                    <p>We're closed. Kindly visit between {openHour}:00 and {closeHour}:00.</p>
                 </div>)
                 }
         </div>
